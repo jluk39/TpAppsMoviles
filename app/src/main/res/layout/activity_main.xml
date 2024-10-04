@@ -1,20 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
+    <!-- nombre app -->
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preguntados Vialidad"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"/>
+
+    <!-- descripcion -->
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta aplicación está diseñada para capacitar a futuros conductores mediante un juego de preguntas sobre señales de tránsito."
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"/>
+
+    <!-- imagen -->
+    <ImageView
+        android:id="@+id/img_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif_auto" />
+
+    <!-- nombre -->
     <EditText
         android:id="@+id/et_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese su nombre" />
 
+    <!-- btn jugar -->
     <Button
         android:id="@+id/btn_comenzar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comenzar" />
+        android:text="Jugar"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>
